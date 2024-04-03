@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\Commande;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use App\Entity\Utilisateur;
 
 /**
  * @extends ServiceEntityRepository<Commande>
@@ -63,4 +64,22 @@ class CommandeRepository extends ServiceEntityRepository
 //            ->getOneOrNullResult()
 //        ;
 //    }
+
+    /**
+     * Trouve la commande en cours pour un utilisateur donné.
+     * 
+     * @param Utilisateur $utilisateur
+     * @return Commande|null
+     */
+
+public function findPanierEnCoursPourUtilisateur(Utilisateur $utilisateur): ?Commande
+{
+    return $this->createQueryBuilder('c')
+        ->andWhere('c.utilisateur = :utilisateur')
+        ->andWhere('c.etat = :etat')
+        ->setParameter('utilisateur', $utilisateur)
+        ->setParameter('etat', 'en cours') // Assurez-vous que cet état correspond à ce que vous utilisez dans votre application
+        ->getQuery()
+        ->getOneOrNullResult();
+}
 }

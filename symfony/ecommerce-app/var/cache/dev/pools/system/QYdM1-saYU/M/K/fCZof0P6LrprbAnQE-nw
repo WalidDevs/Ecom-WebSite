@@ -1,0 +1,3 @@
+<?php //DateTimeInterface%2523getOffset
+
+return [PHP_INT_MAX, []];

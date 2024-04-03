@@ -5,8 +5,8 @@
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.runtime_environment">%env(default:kernel.environment:APP_RUNTIME_ENV)%</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.build_dir">C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev</parameter>
-    <parameter key="kernel.cache_dir">C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev</parameter>
+    <parameter key="kernel.build_dir">C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev</parameter>
+    <parameter key="kernel.cache_dir">C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev</parameter>
     <parameter key="kernel.logs_dir">C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
@@ -74,6 +74,7 @@
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">App_KernelDevDebugContainer</parameter>
+    <parameter key="stripe.secret_key">sk_test_51OrN1yGSygIoaZrnBDrJR2C8mjXKdRyhDvaNuUuhCikrD68luB8UkOrPBr4ODzfqbOwU93seMakGGh4pqjYZE3n100PhZoJPP4</parameter>
     <parameter key="event_dispatcher.event_aliases" type="collection">
       <parameter key="Symfony\Component\Console\Event\ConsoleCommandEvent">console.command</parameter>
       <parameter key="Symfony\Component\Console\Event\ConsoleErrorEvent">console.error</parameter>
@@ -107,14 +108,14 @@
     <parameter key="kernel.error_controller">error_controller</parameter>
     <parameter key="debug.file_link_format">null</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/App_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/App_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">kernel::loadRoutes</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-    <parameter key="serializer.mapping.cache.file">C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/serialization.php</parameter>
+    <parameter key="serializer.mapping.cache.file">C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/serialization.php</parameter>
     <parameter key="cache.prefix.seed">_C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app.App_KernelDevDebugContainer</parameter>
     <parameter key="session.metadata.storage_key">_sf2_meta</parameter>
     <parameter key="session.storage.options" type="collection">
@@ -128,11 +129,11 @@
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
-    <parameter key="validator.mapping.cache.file">C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_main_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/profiler</parameter>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
@@ -222,7 +223,7 @@
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
     <parameter key="doctrine.orm.enable_lazy_ghost_objects">false</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="doctrine.migrations.preferred_em">null</parameter>
     <parameter key="doctrine.migrations.preferred_connection">null</parameter>
@@ -248,24 +249,7 @@
     <parameter key="lexik_jwt_authentication.encoder.signature_algorithm">RS256</parameter>
     <parameter key="lexik_jwt_authentication.encoder.crypto_engine">openssl</parameter>
     <parameter key="nelmio_cors.map" type="collection">
-      <parameter key="^/api/" type="collection">
-        <parameter key="origin_regex">true</parameter>
-        <parameter key="allow_origin" type="collection">
-          <parameter>http://localhost:3000</parameter>
-        </parameter>
-        <parameter key="allow_methods" type="collection">
-          <parameter>GET</parameter>
-          <parameter>OPTIONS</parameter>
-          <parameter>POST</parameter>
-          <parameter>PUT</parameter>
-          <parameter>PATCH</parameter>
-          <parameter>DELETE</parameter>
-        </parameter>
-        <parameter key="allow_headers" type="collection">
-          <parameter>content-type</parameter>
-          <parameter>authorization</parameter>
-        </parameter>
-        <parameter key="max_age">3600</parameter>
+      <parameter key="^/" type="collection">
         <parameter key="skip_same_as_origin">true</parameter>
       </parameter>
     </parameter>
@@ -358,6 +342,10 @@
         <parameter>dump</parameter>
         <parameter>@Debug/Profiler/dump.html.twig</parameter>
       </parameter>
+      <parameter key="mailer.data_collector" type="collection">
+        <parameter>mailer</parameter>
+        <parameter>@WebProfiler/Collector/mailer.html.twig</parameter>
+      </parameter>
       <parameter key="data_collector.config" type="collection">
         <parameter>config</parameter>
         <parameter>@WebProfiler/Collector/config.html.twig</parameter>
@@ -370,6 +358,22 @@
     <service id="kernel" class="App\Kernel" public="true" synthetic="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <tag name="routing.route_loader"/>
+    </service>
+    <service id="App\Controller\PanierController" class="App\Controller\PanierController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <argument type="service" id="security.helper"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\PanierController"/>
+      </call>
+    </service>
+    <service id="App\Controller\PaymentController" class="App\Controller\PaymentController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <argument type="service" id="Stripe\StripeClient"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.GNc8e5B.App\Controller\PaymentController"/>
+      </call>
     </service>
     <service id="App\Controller\ProduitController" class="App\Controller\ProduitController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
@@ -397,6 +401,7 @@
       </call>
     </service>
     <service id="App\EventListener\AuthenticationSuccessEvent" class="App\EventListener\AuthenticationSuccessEvent" autowire="true" autoconfigure="true"/>
+    <service id="App\Factory\StripeClientFactory" class="App\Factory\StripeClientFactory" autowire="true" autoconfigure="true"/>
     <service id="App\Form\ProduitType" class="App\Form\ProduitType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
@@ -433,6 +438,10 @@
       <tag name="kernel.event_listener" event="lexik_jwt_authentication.on_authentication_success" method="onAuthenticationSuccessResponse"/>
     </service>
     <service id="app.circular_reference_handler" class="App\Service\CircularReferenceHandler" autowire="true" autoconfigure="true"/>
+    <service id="Stripe\StripeClient" class="Stripe\StripeClient" autowire="true" autoconfigure="true">
+      <argument>sk_test_51OrN1yGSygIoaZrnBDrJR2C8mjXKdRyhDvaNuUuhCikrD68luB8UkOrPBr4ODzfqbOwU93seMakGGh4pqjYZE3n100PhZoJPP4</argument>
+      <factory class="App\Factory\StripeClientFactory" method="create"/>
+    </service>
     <service id="argument_metadata_factory" class="Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadataFactory"/>
     <service id="response_listener" class="Symfony\Component\HttpKernel\EventListener\ResponseListener">
       <tag name="kernel.event_subscriber"/>
@@ -502,7 +511,7 @@
       </argument>
     </service>
     <service id="http_cache.store" class="Symfony\Component\HttpKernel\HttpCache\Store">
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/http_cache</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/http_cache</argument>
     </service>
     <service id="url_helper" class="Symfony\Component\HttpFoundation\UrlHelper">
       <argument type="service" id="request_stack"/>
@@ -512,7 +521,7 @@
       <tag name="container.no_preload"/>
       <argument type="tagged_iterator" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/App_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/App_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer" public="true">
       <tag name="container.private" package="symfony/framework-bundle" version="5.2"/>
@@ -545,6 +554,7 @@
         <argument key="cache.serializer" type="service" id="cache.serializer" on-invalid="ignore_uninitialized"/>
         <argument key="cache.annotations" type="service" id="cache.annotations" on-invalid="ignore_uninitialized"/>
         <argument key="cache.property_info" type="service" id="cache.property_info" on-invalid="ignore_uninitialized"/>
+        <argument key="mailer.message_logger_listener" type="service" id="mailer.message_logger_listener" on-invalid="ignore_uninitialized"/>
         <argument key="debug.stopwatch" type="service" id="debug.stopwatch" on-invalid="ignore_uninitialized"/>
         <argument key="debug.event_dispatcher" type="service" id="debug.event_dispatcher" on-invalid="ignore_uninitialized"/>
         <argument key="session_listener" type="service" id="session_listener" on-invalid="ignore_uninitialized"/>
@@ -582,6 +592,9 @@
           <argument>reset</argument>
         </argument>
         <argument key="cache.property_info" type="collection">
+          <argument>reset</argument>
+        </argument>
+        <argument key="mailer.message_logger_listener" type="collection">
           <argument>reset</argument>
         </argument>
         <argument key="debug.stopwatch" type="collection">
@@ -1123,7 +1136,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1153,7 +1166,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/pools/app</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -1267,6 +1280,67 @@
         <argument key="cache.doctrine.orm.default.query" type="service" id="cache.doctrine.orm.default.query" on-invalid="ignore_uninitialized"/>
         <argument key="cache.security_expression_language" type="service" id="cache.security_expression_language" on-invalid="ignore_uninitialized"/>
       </argument>
+    </service>
+    <service id="mailer.mailer" class="Symfony\Component\Mailer\Mailer">
+      <argument type="service" id="mailer.transports"/>
+      <argument>null</argument>
+      <argument type="service" id="debug.event_dispatcher" on-invalid="ignore"/>
+    </service>
+    <service id="mailer.transports" class="Symfony\Component\Mailer\Transport\Transports">
+      <argument type="collection">
+        <argument key="main">%env(MAILER_DSN)%</argument>
+      </argument>
+      <factory service="mailer.transport_factory" method="fromStrings"/>
+    </service>
+    <service id="mailer.transport_factory" class="Symfony\Component\Mailer\Transport">
+      <argument type="tagged_iterator" tag="mailer.transport_factory"/>
+    </service>
+    <service id="mailer.default_transport" class="Symfony\Component\Mailer\Transport\TransportInterface">
+      <argument>%env(MAILER_DSN)%</argument>
+      <factory service="mailer.transport_factory" method="fromString"/>
+    </service>
+    <service id="mailer.messenger.message_handler" class="Symfony\Component\Mailer\Messenger\MessageHandler">
+      <tag name="messenger.message_handler"/>
+      <argument type="service" id="mailer.transports"/>
+    </service>
+    <service id="mailer.envelope_listener" class="Symfony\Component\Mailer\EventListener\EnvelopeListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument>null</argument>
+      <argument>null</argument>
+    </service>
+    <service id="mailer.message_logger_listener" class="Symfony\Component\Mailer\EventListener\MessageLoggerListener">
+      <tag name="kernel.event_subscriber"/>
+      <tag name="kernel.reset" method="reset"/>
+    </service>
+    <service id="mailer.transport_factory.abstract" class="Symfony\Component\Mailer\Transport\AbstractTransportFactory" abstract="true">
+      <tag name="monolog.logger" channel="mailer"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument type="service" id="http_client" on-invalid="ignore"/>
+      <argument type="service" id="monolog.logger.mailer" on-invalid="ignore"/>
+    </service>
+    <service id="mailer.transport_factory.null" class="Symfony\Component\Mailer\Transport\NullTransportFactory">
+      <tag name="mailer.transport_factory"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument>null</argument>
+      <argument type="service" id="monolog.logger.mailer" on-invalid="ignore"/>
+    </service>
+    <service id="mailer.transport_factory.sendmail" class="Symfony\Component\Mailer\Transport\SendmailTransportFactory">
+      <tag name="mailer.transport_factory"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument>null</argument>
+      <argument type="service" id="monolog.logger.mailer" on-invalid="ignore"/>
+    </service>
+    <service id="mailer.transport_factory.smtp" class="Symfony\Component\Mailer\Transport\Smtp\EsmtpTransportFactory">
+      <tag name="mailer.transport_factory" priority="-100"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument>null</argument>
+      <argument type="service" id="monolog.logger.mailer" on-invalid="ignore"/>
+    </service>
+    <service id="mailer.transport_factory.native" class="Symfony\Component\Mailer\Transport\NativeTransportFactory">
+      <tag name="mailer.transport_factory"/>
+      <argument type="service" id="debug.event_dispatcher"/>
+      <argument>null</argument>
+      <argument type="service" id="monolog.logger.mailer" on-invalid="ignore"/>
     </service>
     <service id="debug.debug_handlers_listener" class="Symfony\Component\HttpKernel\EventListener\DebugHandlersListener">
       <tag name="kernel.event_subscriber"/>
@@ -1484,6 +1558,22 @@
         <argument>0</argument>
       </call>
       <call method="addListener">
+        <argument>Symfony\Component\Mailer\Event\MessageEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="mailer.envelope_listener"/>
+          <argument>onMessage</argument>
+        </argument>
+        <argument>-255</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Mailer\Event\MessageEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="mailer.message_logger_listener"/>
+          <argument>onMessage</argument>
+        </argument>
+        <argument>-255</argument>
+      </call>
+      <call method="addListener">
         <argument>kernel.request</argument>
         <argument type="collection">
           <argument type="service_closure" id="debug.debug_handlers_listener"/>
@@ -1584,6 +1674,14 @@
         <argument type="collection">
           <argument type="service_closure" id="data_collector.request"/>
           <argument>onKernelResponse</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Mailer\Event\MessageEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="twig.mailer.message_listener"/>
+          <argument>onMessage</argument>
         </argument>
         <argument>0</argument>
       </call>
@@ -1853,10 +1951,10 @@
     <service id="router.default" class="Symfony\Bundle\FrameworkBundle\Routing\Router">
       <tag name="monolog.logger" channel="router"/>
       <tag name="container.service_subscriber" id="routing.loader"/>
-      <argument type="service" id=".service_locator.ahiv2oj.router.default"/>
+      <argument type="service" id=".service_locator.pKWmPfh.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev</argument>
+        <argument key="cache_dir">C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -1958,13 +2056,13 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/annotations.php</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/annotations.php</argument>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!.*Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache_adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
       <tag name="container.hot_path"/>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/annotations.php</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -2002,6 +2100,7 @@
         <argument type="service" id="serializer.normalizer.uid"/>
         <argument type="service" id="serializer.normalizer.datetime"/>
         <argument type="service" id="serializer.normalizer.constraint_violation_list"/>
+        <argument type="service" id="serializer.normalizer.mime_message"/>
         <argument type="service" id="serializer.normalizer.datetimezone"/>
         <argument type="service" id="serializer.normalizer.dateinterval"/>
         <argument type="service" id="serializer.normalizer.form_error"/>
@@ -2025,6 +2124,10 @@
       <argument type="collection"/>
       <argument type="service" id="serializer.name_converter.metadata_aware"/>
     </service>
+    <service id="serializer.normalizer.mime_message" class="Symfony\Component\Serializer\Normalizer\MimeMessageNormalizer">
+      <tag name="serializer.normalizer" priority="-915"/>
+      <argument type="service" id="serializer.normalizer.property"/>
+    </service>
     <service id="serializer.normalizer.datetimezone" class="Symfony\Component\Serializer\Normalizer\DateTimeZoneNormalizer">
       <tag name="serializer.normalizer" priority="-915"/>
     </service>
@@ -2033,7 +2136,7 @@
     </service>
     <service id="serializer.normalizer.data_uri" class="Symfony\Component\Serializer\Normalizer\DataUriNormalizer">
       <tag name="serializer.normalizer" priority="-920"/>
-      <argument>null</argument>
+      <argument type="service" id="mime_types" on-invalid="null"/>
     </service>
     <service id="serializer.normalizer.datetime" class="Symfony\Component\Serializer\Normalizer\DateTimeNormalizer">
       <tag name="serializer.normalizer" priority="-910"/>
@@ -2097,10 +2200,10 @@
           </service>
         </argument>
       </argument>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/serialization.php</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/serialization.php</argument>
     </service>
     <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface">
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/serialization.php</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/serialization.php</argument>
       <argument type="service" id="cache.serializer"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -2221,7 +2324,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.factory.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorageFactory">
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/sessions</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\MetadataBag">
@@ -2436,10 +2539,10 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/validation.php</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/validation.php</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -2526,11 +2629,14 @@
         <argument type="service" id="data_collector.dump"/>
       </call>
       <call method="add">
+        <argument type="service" id="mailer.data_collector"/>
+      </call>
+      <call method="add">
         <argument type="service" id="data_collector.config"/>
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage">
-      <argument>file:C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/profiler</argument>
+      <argument>file:C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener">
       <tag name="kernel.event_subscriber"/>
@@ -2577,7 +2683,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <argument type="service" id="monolog.logger.profiler" on-invalid="ignore"/>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/App_KernelDevDebugContainer</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/App_KernelDevDebugContainer</argument>
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector">
@@ -2662,6 +2768,15 @@
       <tag name="data_collector" template="@WebProfiler/Collector/validator.html.twig" id="validator" priority="320"/>
       <argument type="service" id="debug.validator"/>
     </service>
+    <service id="mailer.data_collector" class="Symfony\Component\Mailer\DataCollector\MessageDataCollector">
+      <tag name="data_collector" template="@WebProfiler/Collector/mailer.html.twig" id="mailer"/>
+      <argument type="service" id="mailer.message_logger_listener"/>
+    </service>
+    <service id="mime_types" class="Symfony\Component\Mime\MimeTypes">
+      <call method="setDefault">
+        <argument type="service" id="mime_types"/>
+      </call>
+    </service>
     <service id="twig" class="Twig\Environment" public="true">
       <tag name="container.preload" class="Twig\Cache\FilesystemCache"/>
       <tag name="container.preload" class="Twig\Extension\CoreExtension"/>
@@ -2675,7 +2790,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="autoescape">name</argument>
-        <argument key="cache">C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/twig</argument>
+        <argument key="cache">C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -2748,6 +2863,7 @@
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator">
       <argument type="service" id="kernel"/>
       <argument type="collection">
+        <argument key="C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\vendor\symfony\twig-bridge/Resources/views/Email">email</argument>
         <argument key="C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\vendor\symfony\twig-bridge/Resources/views/Form">null</argument>
       </argument>
       <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app/templates</argument>
@@ -2804,6 +2920,14 @@
       </call>
       <call method="addPath">
         <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app/templates</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\vendor\symfony\twig-bridge/Resources/views/Email</argument>
+        <argument>email</argument>
+      </call>
+      <call method="addPath">
+        <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\vendor\symfony\twig-bridge/Resources/views/Email</argument>
+        <argument>!email</argument>
       </call>
       <call method="addPath">
         <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\vendor\symfony\twig-bridge/Resources/views/Form</argument>
@@ -2927,6 +3051,14 @@
       <call method="setDescription">
         <argument>Lint a Twig template and outputs encountered errors</argument>
       </call>
+    </service>
+    <service id="twig.mailer.message_listener" class="Symfony\Component\Mailer\EventListener\MessageListener">
+      <tag name="kernel.event_subscriber"/>
+      <argument>null</argument>
+      <argument type="service" id="twig.mime_body_renderer"/>
+    </service>
+    <service id="twig.mime_body_renderer" class="Symfony\Bridge\Twig\Mime\BodyRenderer">
+      <argument type="service" id="twig"/>
     </service>
     <service id="web_profiler.controller.profiler" class="Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController" public="true">
       <argument type="service" id="router.default" on-invalid="null"/>
@@ -3539,7 +3671,7 @@
         <argument type="service" id=".doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/doctrine/orm/Proxies</argument>
+        <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -4242,99 +4374,7 @@
         </service>
       </argument>
     </service>
-    <service id="security.access_map" class="Symfony\Component\Security\Http\AccessMap">
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.iDtJtRX"/>
-        <argument type="collection">
-          <argument>IS_AUTHENTICATED_ANONYMOUSLY</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.RHM.hIp"/>
-        <argument type="collection">
-          <argument>IS_AUTHENTICATED_ANONYMOUSLY</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.BLqy4_z"/>
-        <argument type="collection">
-          <argument>IS_AUTHENTICATED_FULLY</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.BLqy4_z"/>
-        <argument type="collection">
-          <argument>ROLE_USER</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.xBCHlLa"/>
-        <argument type="collection">
-          <argument>ROLE_USER</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.HTq_MLC"/>
-        <argument type="collection">
-          <argument>ROLE_USER</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.RHM.hIp"/>
-        <argument type="collection">
-          <argument>ROLE_USER</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.BLqy4_z"/>
-        <argument type="collection">
-          <argument>ROLE_USER</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.jr0hOUi"/>
-        <argument type="collection">
-          <argument>IS_AUTHENTICATED_FULLY</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.dSqvTj5"/>
-        <argument type="collection">
-          <argument>IS_AUTHENTICATED_FULLY</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.BD4AAVa"/>
-        <argument type="collection">
-          <argument>IS_AUTHENTICATED_FULLY</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.xBCHlLa"/>
-        <argument type="collection">
-          <argument>IS_AUTHENTICATED_FULLY</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-      <call method="add">
-        <argument type="service" id=".security.request_matcher.HTq_MLC"/>
-        <argument type="collection">
-          <argument>IS_AUTHENTICATED_FULLY</argument>
-        </argument>
-        <argument>null</argument>
-      </call>
-    </service>
+    <service id="security.access_map" class="Symfony\Component\Security\Http\AccessMap"/>
     <service id="security.context_listener" class="Symfony\Component\Security\Http\Firewall\ContextListener">
       <tag name="monolog.logger" channel="security"/>
       <argument type="service" id="security.untracked_token_storage"/>
@@ -5157,30 +5197,6 @@
         <argument key="security.firewall.map.context.main" type="service_closure" id="security.firewall.map.context.main"/>
       </argument>
     </service>
-    <service id=".security.request_matcher.iDtJtRX" class="Symfony\Component\HttpFoundation\RequestMatcher">
-      <argument>^/api/login_check</argument>
-    </service>
-    <service id=".security.request_matcher.RHM.hIp" class="Symfony\Component\HttpFoundation\RequestMatcher">
-      <argument>^/api/register</argument>
-    </service>
-    <service id=".security.request_matcher.BLqy4_z" class="Symfony\Component\HttpFoundation\RequestMatcher">
-      <argument>^/api/profile</argument>
-    </service>
-    <service id=".security.request_matcher.xBCHlLa" class="Symfony\Component\HttpFoundation\RequestMatcher">
-      <argument>^/api/utilisateurs/edit/.*</argument>
-    </service>
-    <service id=".security.request_matcher.HTq_MLC" class="Symfony\Component\HttpFoundation\RequestMatcher">
-      <argument>^/api/utilisateurs/delete/.*</argument>
-    </service>
-    <service id=".security.request_matcher.jr0hOUi" class="Symfony\Component\HttpFoundation\RequestMatcher">
-      <argument>^/api/produits/new</argument>
-    </service>
-    <service id=".security.request_matcher.dSqvTj5" class="Symfony\Component\HttpFoundation\RequestMatcher">
-      <argument>^/api/produits/.*/edit</argument>
-    </service>
-    <service id=".security.request_matcher.BD4AAVa" class="Symfony\Component\HttpFoundation\RequestMatcher">
-      <argument>^/api/produitsdelete/.*</argument>
-    </service>
     <service id="security.command.user_password_encoder" class="Symfony\Bundle\SecurityBundle\Command\UserPasswordEncoderCommand">
       <tag name="console.command" command="security:encode-password"/>
       <tag name="container.no_preload"/>
@@ -5416,6 +5432,12 @@
         <argument key="circular_reference_handler" type="service" id="app.circular_reference_handler"/>
       </argument>
     </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PanierController" class="App\Controller\PanierController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PanierController" class="App\Controller\PanierController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\PanierController" class="App\Controller\PanierController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PaymentController" class="App\Controller\PaymentController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PaymentController" class="App\Controller\PaymentController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\PaymentController" class="App\Controller\PaymentController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\ProduitController" class="App\Controller\ProduitController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\ProduitController" class="App\Controller\ProduitController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\ProduitController" class="App\Controller\ProduitController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -5766,6 +5788,31 @@
         <argument key="loader" type="service_closure" id=".errored..service_locator.KfbR3DY.Symfony\Component\Config\Loader\LoaderInterface"/>
       </argument>
     </service>
+    <service id=".service_locator.l2QwsaZ" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="entityManager" type="service_closure" id="doctrine.orm.default_entity_manager"/>
+      </argument>
+    </service>
+    <service id=".service_locator.fBpndJA" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="commandeRepository" type="service_closure" id="App\Repository\CommandeRepository"/>
+        <argument key="serializer" type="service_closure" id="serializer"/>
+      </argument>
+    </service>
+    <service id=".service_locator.5miB8_X" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="em" type="service_closure" id="doctrine.orm.default_entity_manager"/>
+      </argument>
+    </service>
+    <service id=".service_locator.CpaXrFh" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="mailer" type="service_closure" id="mailer.mailer"/>
+      </argument>
+    </service>
     <service id=".service_locator.JM5nZSk" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -5807,9 +5854,14 @@
         <argument key="user" type="service_closure" id=".errored..service_locator.iD_O4kk.App\Entity\Utilisateur"/>
       </argument>
     </service>
-    <service id=".service_locator.LdHgwex" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.UEKGlEU" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Controller\PanierController::add" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\PanierController::getPanier" type="service_closure" id=".service_locator.fBpndJA"/>
+        <argument key="App\Controller\PanierController::removeFromCart" type="service_closure" id=".service_locator.5miB8_X"/>
+        <argument key="App\Controller\PaymentController::finalizePayment" type="service_closure" id=".service_locator.CpaXrFh"/>
+        <argument key="App\Controller\PaymentController::testSendEmail" type="service_closure" id=".service_locator.CpaXrFh"/>
         <argument key="App\Controller\ProduitController::delete" type="service_closure" id=".service_locator.ZJzZ1Z2"/>
         <argument key="App\Controller\ProduitController::edit" type="service_closure" id=".service_locator.ZJzZ1Z2"/>
         <argument key="App\Controller\ProduitController::index" type="service_closure" id=".service_locator.JM5nZSk"/>
@@ -5822,6 +5874,11 @@
         <argument key="App\Kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel::loadRoutes" type="service_closure" id=".service_locator.KfbR3DY"/>
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.KfbR3DY"/>
+        <argument key="App\Controller\PanierController:add" type="service_closure" id=".service_locator.l2QwsaZ"/>
+        <argument key="App\Controller\PanierController:getPanier" type="service_closure" id=".service_locator.fBpndJA"/>
+        <argument key="App\Controller\PanierController:removeFromCart" type="service_closure" id=".service_locator.5miB8_X"/>
+        <argument key="App\Controller\PaymentController:finalizePayment" type="service_closure" id=".service_locator.CpaXrFh"/>
+        <argument key="App\Controller\PaymentController:testSendEmail" type="service_closure" id=".service_locator.CpaXrFh"/>
         <argument key="App\Controller\ProduitController:delete" type="service_closure" id=".service_locator.ZJzZ1Z2"/>
         <argument key="App\Controller\ProduitController:edit" type="service_closure" id=".service_locator.ZJzZ1Z2"/>
         <argument key="App\Controller\ProduitController:index" type="service_closure" id=".service_locator.JM5nZSk"/>
@@ -5929,6 +5986,19 @@
     </service>
     <service id="monolog.logger.cache" class="Symfony\Bridge\Monolog\Logger">
       <argument>cache</argument>
+      <call method="pushProcessor">
+        <argument type="service" id="debug.log_processor"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.console"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.main"/>
+      </call>
+      <configurator class="Symfony\Bundle\FrameworkBundle\DependencyInjection\Compiler\AddDebugLogProcessorPass" method="configureLogger"/>
+    </service>
+    <service id="monolog.logger.mailer" class="Symfony\Bridge\Monolog\Logger">
+      <argument>mailer</argument>
       <call method="pushProcessor">
         <argument type="service" id="debug.log_processor"/>
       </call>
@@ -6117,6 +6187,18 @@
         <argument key="twig" type="service_closure" id="twig" on-invalid="ignore"/>
       </argument>
     </service>
+    <service id=".service_locator.GNc8e5B.App\Controller\PanierController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\PanierController"/>
+      <argument>App\Controller\PanierController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
+    </service>
+    <service id=".service_locator.GNc8e5B.App\Controller\PaymentController" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator_context" id="App\Controller\PaymentController"/>
+      <argument>App\Controller\PaymentController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.GNc8e5B" method="withContext"/>
+    </service>
     <service id=".service_locator.GNc8e5B.App\Controller\ProduitController" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="App\Controller\ProduitController"/>
       <argument>App\Controller\ProduitController</argument>
@@ -6135,17 +6217,17 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.GNc8e5B" method="withContext"/>
     </service>
-    <service id=".service_locator.ahiv2oj" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.pKWmPfh" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="routing.loader" type="service_closure" id="routing.loader"/>
       </argument>
     </service>
-    <service id=".service_locator.ahiv2oj.router.default" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.pKWmPfh.router.default" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator_context" id="router.default"/>
       <argument>router.default</argument>
       <argument type="service" id="service_container"/>
-      <factory service=".service_locator.ahiv2oj" method="withContext"/>
+      <factory service=".service_locator.pKWmPfh" method="withContext"/>
     </service>
     <service id=".service_locator.HLwzKIm" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
@@ -6288,12 +6370,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
-      <argument type="service" id=".service_locator.LdHgwex"/>
+      <argument type="service" id=".service_locator.UEKGlEU"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
-      <argument type="service" id=".service_locator.LdHgwex"/>
+      <argument type="service" id=".service_locator.UEKGlEU"/>
     </service>
     <service id=".doctrine.orm.default_metadata_driver.inner" class="Doctrine\Persistence\Mapping\Driver\MappingDriverChain">
       <call method="addDriver">
@@ -6893,7 +6975,7 @@
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
       <argument>6Js1+A61K7</argument>
       <argument>0</argument>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/pools/app</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -6903,7 +6985,7 @@
       <argument>dWBfoli2Jc</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6911,7 +6993,7 @@
       <argument>3o1usXRLMA</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6919,7 +7001,7 @@
       <argument>UVk2CR5yhE</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6927,7 +7009,7 @@
       <argument>QYdM1-saYU</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6935,7 +7017,7 @@
       <argument>x+kqCZScwU</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6943,7 +7025,7 @@
       <argument>vlOL37AXvM</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6953,7 +7035,7 @@
       <argument>BWxfS16ifW</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:/Users/hp/Desktop/SAE-VERSION-FINAL/SAE-PROJECT-ECOMMERCE/symfony/ecommerce-app/var/cache/dev/pools/system</argument>
+      <argument>C:\Users\hp\Desktop\SAE-VERSION-FINAL\SAE-PROJECT-ECOMMERCE\symfony\ecommerce-app\var\cache\dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -6999,6 +7081,12 @@
     </service>
     <service id="Symfony\Contracts\Cache\CacheInterface" alias="cache.app"/>
     <service id="Symfony\Contracts\Cache\TagAwareCacheInterface" alias="cache.app.taggable"/>
+    <service id="mailer" alias="mailer.mailer"/>
+    <service id="Symfony\Component\Mailer\MailerInterface" alias="mailer.mailer"/>
+    <service id="Symfony\Component\Mailer\Transport\TransportInterface" alias="mailer.default_transport"/>
+    <service id="mailer.logger_message_listener" alias="mailer.message_logger_listener">
+      <deprecated package="symfony/framework-bundle" version="5.2">The "%alias_id%" alias is deprecated, use "mailer.message_logger_listener" instead.</deprecated>
+    </service>
     <service id="Symfony\Component\HttpKernel\Debug\FileLinkFormatter" alias="debug.file_link_formatter"/>
     <service id="Symfony\Component\Stopwatch\Stopwatch" alias="debug.stopwatch"/>
     <service id="router" alias="router.default" public="true"/>
@@ -7049,6 +7137,8 @@
     <service id="form.choice_list_factory" alias="form.choice_list_factory.cached"/>
     <service id="Symfony\Component\Validator\Validator\ValidatorInterface" alias="debug.validator"/>
     <service id="validator.mapping.class_metadata_factory" alias="debug.validator"/>
+    <service id="Symfony\Component\Mime\MimeTypesInterface" alias="mime_types"/>
+    <service id="Symfony\Component\Mime\MimeTypeGuesserInterface" alias="mime_types"/>
     <service id="Twig_Environment" alias="twig"/>
     <service id="Twig\Environment" alias="twig"/>
     <service id="logger" alias="monolog.logger"/>
@@ -7119,7 +7209,7 @@
     <service id="lexik_jwt_authentication.key_loader" alias="lexik_jwt_authentication.key_loader.raw" public="true"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.gSv9zYw" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.LdHgwex"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.UEKGlEU"/>
     <service id="session" alias=".session.do-not-use" public="true">
       <deprecated package="symfony/framework-bundle" version="5.3">The "%alias_id%" service and "SessionInterface" alias are deprecated, use "$requestStack-&gt;getSession()" instead.</deprecated>
     </service>
@@ -7127,6 +7217,7 @@
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
     <service id="Psr\Log\LoggerInterface $consoleLogger" alias="monolog.logger.console"/>
     <service id="Psr\Log\LoggerInterface $cacheLogger" alias="monolog.logger.cache"/>
+    <service id="Psr\Log\LoggerInterface $mailerLogger" alias="monolog.logger.mailer"/>
     <service id="Psr\Log\LoggerInterface $phpLogger" alias="monolog.logger.php"/>
     <service id="Psr\Log\LoggerInterface $eventLogger" alias="monolog.logger.event"/>
     <service id="Psr\Log\LoggerInterface $routerLogger" alias="monolog.logger.router"/>
@@ -7140,7 +7231,7 @@
     <service id=".service_locator.0GV1BZZ" alias=".service_locator.gSv9zYw"/>
     <service id=".service_locator._uuLAPJ" alias=".service_locator.1GMkKNd"/>
     <service id=".service_locator.E5vVOpF" alias=".service_locator.iD_O4kk"/>
-    <service id=".service_locator.ymPrH94" alias=".service_locator.LdHgwex"/>
+    <service id=".service_locator.DNDafGv" alias=".service_locator.UEKGlEU"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
     <service id=".service_locator.XH2xWYY" alias=".service_locator.Pgy1XDu"/>
     <service id=".service_locator.4hi2aOY" alias=".service_locator.bBRwv06"/>
@@ -7166,6 +7257,10 @@
     <service id="argument_resolver.not_tagged_controller" alias="debug.argument_resolver.not_tagged_controller"/>
     <service id="doctrine.orm.default_metadata_driver" alias=".doctrine.orm.default_metadata_driver"/>
     <service id=".service_locator.JBAFp66" alias=".service_locator.KfbR3DY"/>
+    <service id=".service_locator.Er0_7SX" alias=".service_locator.l2QwsaZ"/>
+    <service id=".service_locator.f7UPY3e" alias=".service_locator.fBpndJA"/>
+    <service id=".service_locator.kydi4Ed" alias=".service_locator.5miB8_X"/>
+    <service id=".service_locator.yciRRzv" alias=".service_locator.CpaXrFh"/>
     <service id=".service_locator.pyGlz54" alias=".service_locator.JM5nZSk"/>
     <service id=".service_locator.kBtZJDA" alias=".service_locator.ZJzZ1Z2"/>
     <service id=".service_locator.tF0tk8K" alias=".service_locator.M9PMcRV"/>

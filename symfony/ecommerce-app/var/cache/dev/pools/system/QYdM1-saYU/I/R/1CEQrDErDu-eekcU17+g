@@ -1,0 +1,3 @@
+<?php //DateTimeZone%2523listIdentifiers
+
+return [PHP_INT_MAX, []];

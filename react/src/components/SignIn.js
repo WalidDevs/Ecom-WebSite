@@ -1,5 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Input,
+  Button,
+} from "@material-tailwind/react";
+import { toast } from 'react-toastify';
 
 const SignIn = () => {
   const navigate = useNavigate();
@@ -33,34 +43,52 @@ const SignIn = () => {
       localStorage.setItem('token', data.token); // Stockez le token JWT
       localStorage.setItem('userId', data.user.id); // Supposons que l'API renvoie l'ID de l'utilisateur sous `data.user.id`
       localStorage.setItem('userRoles', JSON.stringify(data.user.role_user)); // Stockez les rôles de l'utilisateur
-      navigate('/'); // Rediriger vers la page d'accueil après la connexion
+      navigate('/Product'); // Rediriger vers la page d'accueil après la connexion
     } catch (error) {
-      console.error('Erreur lors de la connexion:', error);
+      toast.error('Erreur lors de la connexion:', error);
     }
   };
 
   return (
-    <div>
-      <h2>Connexion</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          name="email"
-          value={credentials.email}
-          onChange={handleChange}
-          placeholder="Email"
-          required
-        />
-        <input
-          type="password"
-          name="password"
-          value={credentials.password}
-          onChange={handleChange}
-          placeholder="Mot de passe"
-          required
-        />
-        <button type="submit">Se connecter</button>
-      </form>
+    <div className="flex justify-center items-center h-screen bg-gray-900">
+      <Card className="w-96">
+        <CardHeader
+          variant="gradient"
+          color="gray"
+          className="mb-4 grid h-28 place-items-center"
+        >
+          <Typography variant="h3" color="white">
+            Connexion
+          </Typography>
+        </CardHeader>
+        <CardBody className="flex flex-col gap-4">
+          <form onSubmit={handleSubmit} className="mt-6 mb-8 flex flex-col gap-4 items-center justify-center">
+            <Input
+              type="email"
+              name="email"
+              value={credentials.email}
+              onChange={handleChange}
+              label="Email"
+              size="lg"
+              required
+            />
+            <Input
+              type="password"
+              name="password"
+              value={credentials.password}
+              onChange={handleChange}
+              label="Mot de passe"
+              size="lg"
+              required
+            />
+            <CardFooter className="pt-0">
+              <Button type="submit" variant="gradient" fullWidth>
+                Se connecter
+              </Button>
+            </CardFooter>
+          </form>
+        </CardBody>
+      </Card>
     </div>
   );
 };

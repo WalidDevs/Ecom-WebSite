@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\LigneCommandRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=LigneCommandRepository::class)
@@ -19,16 +20,20 @@ class LigneCommand
 
     /**
      * @ORM\Column(type="integer")
+     * @Groups("panier:read")
      */
     private $quantite;
 
     /**
      * @ORM\ManyToOne(targetEntity=Produit::class, inversedBy="cmd")
+     * @Groups("panier:read")
+     * 
      */
     private $produit;
 
     /**
      * @ORM\ManyToOne(targetEntity=Commande::class, inversedBy="lignecommands")
+     * @Groups("panier:read")
      */
     private $cmde;
 

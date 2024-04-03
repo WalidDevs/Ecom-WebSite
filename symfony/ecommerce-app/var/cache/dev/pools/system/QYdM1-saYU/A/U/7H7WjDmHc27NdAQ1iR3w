@@ -1,0 +1,3 @@
+<?php //DateTimeZone%2523listAbbreviations
+
+return [PHP_INT_MAX, []];

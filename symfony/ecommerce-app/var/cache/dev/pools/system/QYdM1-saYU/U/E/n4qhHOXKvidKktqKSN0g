@@ -1,0 +1,3 @@
+<?php //DateTimeZone
+
+return [PHP_INT_MAX, []];

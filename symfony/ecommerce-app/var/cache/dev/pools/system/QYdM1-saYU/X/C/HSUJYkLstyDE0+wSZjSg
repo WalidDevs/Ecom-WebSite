@@ -1,0 +1,3 @@
+<?php //DateTime%2523diff
+
+return [PHP_INT_MAX, []];

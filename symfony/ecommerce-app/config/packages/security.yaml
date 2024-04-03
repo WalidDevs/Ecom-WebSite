@@ -41,23 +41,23 @@ security:
 
     access_control:
         # Autoriser l'accès anonyme à certaines routes
-        - { path: ^/api/login_check, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/api/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/api/profile, roles: IS_AUTHENTICATED_FULLY }
+         #- { path: ^/api/login_check, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+         #- { path: ^/api/register, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+         #- { path: ^/api/profile, roles: IS_AUTHENTICATED_FULLY }
         
         
         
-        - { path: ^/api/profile, roles: ROLE_USER }
-        - { path: ^/api/utilisateurs/edit/.*, roles: ROLE_USER }
-        - { path: ^/api/utilisateurs/delete/.*, roles: ROLE_USER }
+        #- { path: ^/api/profile, roles: ROLE_USER }
+        #- { path: ^/api/utilisateurs/edit/.*, roles: ROLE_USER }
+        #- { path: ^/api/utilisateurs/delete/.*, roles: ROLE_USER }
         
-        - { path: ^/api/register, roles: ROLE_USER }
-        - { path: ^/api/profile, roles: ROLE_USER }
-        - { path: ^/api/produits/new, roles: IS_AUTHENTICATED_FULLY }
-        - { path: ^/api/produits/.*/edit, roles: IS_AUTHENTICATED_FULLY }
-        - { path: ^/api/produitsdelete/.*, roles: IS_AUTHENTICATED_FULLY }
-        - { path: ^/api/utilisateurs/edit/.*, roles: IS_AUTHENTICATED_FULLY }
-        - { path: ^/api/utilisateurs/delete/.*, roles: IS_AUTHENTICATED_FULLY }
+        #- { path: ^/api/register, roles: ROLE_USER }
+        #- { path: ^/api/profile, roles: ROLE_USER }
+        #- { path: ^/api/produits/new, roles: IS_AUTHENTICATED_FULLY }
+        #- { path: ^/api/produits/.*/edit, roles: IS_AUTHENTICATED_FULLY }
+        #- { path: ^/api/produitsdelete/.*, roles: IS_AUTHENTICATED_FULLY }
+        #- { path: ^/api/utilisateurs/edit/.*, roles: IS_AUTHENTICATED_FULLY }
+        #- { path: ^/api/utilisateurs/delete/.*, roles: IS_AUTHENTICATED_FULLY }
         # Sécuriser les routes de l'API
         #- { path: ^/api, roles: IS_AUTHENTICATED_FULLY }
 

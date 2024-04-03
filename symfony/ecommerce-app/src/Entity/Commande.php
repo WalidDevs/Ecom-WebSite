@@ -6,7 +6,7 @@ use App\Repository\CommandeRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\Serializer\Annotation\Groups;
 /**
  * @ORM\Entity(repositoryClass=CommandeRepository::class)
  */
@@ -31,11 +31,13 @@ class Commande
 
     /**
      * @ORM\ManyToMany(targetEntity=Produit::class, mappedBy="command")
+     * @Groups("panier:read")
      */
     private $produits;
 
     /**
      * @ORM\OneToMany(targetEntity=LigneCommand::class, mappedBy="cmde")
+     * @Groups("panier:read")
      */
     private $lignecommands;
 
@@ -43,6 +45,11 @@ class Commande
      * @ORM\OneToOne(targetEntity=Paiment::class, mappedBy="commannde", cascade={"persist", "remove"})
      */
     private $paiment;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $etat;
 
     public function __construct()
     {
@@ -154,6 +161,18 @@ class Commande
         }
 
         $this->paiment = $paiment;
+
+        return $this;
+    }
+
+    public function getEtat(): ?string
+    {
+        return $this->etat;
+    }
+
+    public function setEtat(string $etat): self
+    {
+        $this->etat = $etat;
 
         return $this;
     }

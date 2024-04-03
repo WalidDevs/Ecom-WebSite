@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const AddProduct = () => {
   const navigate = useNavigate();
@@ -39,57 +40,66 @@ const AddProduct = () => {
       if (!response.ok) {
         throw new Error('Erreur lors de la création du produit');
       }
-      navigate('/'); // Rediriger vers la page principale après la création
+      toast.success('Produit crée avec succes');
+      navigate('/Product'); // Rediriger vers la page principale après la création
     } catch (error) {
-      console.error('Erreur lors de la création du produit:', error);
+      toast.error('Erreur lors de la création du produit');
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-
-<select
-        name="categorie"
-        value={product.categorie}
-        onChange={handleInputChange}
-      >
-        <option value="">Sélectionnez une catégorie</option>
-        {categories.map((categorie) => (
-          <option key={categorie.id} value={categorie.id}>
-            {categorie.name}
-          </option>
-        ))}
-      </select>
-      <input
-        type="text"
-        name="titre"
-        placeholder="Titre"
-        value={product.titre}
-        onChange={handleInputChange}
-      />
-      <input
-        type="text"
-        name="description"
-        placeholder="Description"
-        value={product.description}
-        onChange={handleInputChange}
-      />
-      <input
-        type="text"
-        name="prix"
-        placeholder="Prix"
-        value={product.prix}
-        onChange={handleInputChange}
-      />
-      <input
-        type="text"
-        name="image"
-        placeholder="URL de l'image"
-        value={product.image}
-        onChange={handleInputChange}
-      />
-      <button type="submit">Ajouter le produit</button>
-    </form>
+    <div className=" bg-gray-900 flex flex-col items-center justify-center min-h-screen w-full">
+    <form onSubmit={handleSubmit} className="flex flex-col p-4 space-y-4 max-w-lg mx-auto">
+            <select
+                name="categorie"
+                value={product.categorie}
+                onChange={handleInputChange}
+                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+                <option value="">Sélectionnez une catégorie</option>
+                {categories.map((categorie) => (
+                    <option key={categorie.id} value={categorie.id}>
+                        {categorie.name}
+                    </option>
+                ))}
+            </select>
+            <input
+                type="text"
+                name="titre"
+                placeholder="Titre"
+                value={product.titre}
+                onChange={handleInputChange}
+                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input
+                type="text"
+                name="description"
+                placeholder="Description"
+                value={product.description}
+                onChange={handleInputChange}
+                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input
+                type="text"
+                name="prix"
+                placeholder="Prix"
+                value={product.prix}
+                onChange={handleInputChange}
+                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input
+                type="text"
+                name="image"
+                placeholder="URL de l'image"
+                value={product.image}
+                onChange={handleInputChange}
+                className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">
+                Ajouter le produit
+            </button>
+        </form>
+        </div>
   );
 };
 

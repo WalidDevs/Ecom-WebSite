@@ -7,6 +7,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=UtilisateurRepository::class)
@@ -56,7 +57,7 @@ class Utilisateur implements UserInterface
     private $produit;
 
     /**
-     * @ORM\OneToMany(targetEntity=Commande::class, mappedBy="utilisateur")
+     * @ORM\OneToMany(targetEntity=Commande::class, mappedBy="utilisateur", cascade={"remove"})
      */
     private $commandes;
 

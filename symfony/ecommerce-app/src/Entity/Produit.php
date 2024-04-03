@@ -18,6 +18,7 @@ class Produit
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups({"panier:read"})
      */
 
      
@@ -25,6 +26,7 @@ class Produit
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"panier:read"})
      */
 
     
@@ -32,6 +34,7 @@ class Produit
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"panier:read"})
      */
 
      
@@ -39,6 +42,7 @@ class Produit
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"panier:read"})
      */
 
      
@@ -46,6 +50,7 @@ class Produit
 
     /**
      * @ORM\Column(type="integer")
+     * @Groups({"panier:read"})
      */
 
      
@@ -58,6 +63,7 @@ class Produit
 
     /**
      * @ORM\ManyToMany(targetEntity=Commande::class, inversedBy="produits")
+     * @Groups("panier:read")
      */
     private $command;
 
@@ -67,7 +73,7 @@ class Produit
     private $categorie;
 
     /**
-     * @ORM\OneToMany(targetEntity=LigneCommand::class, mappedBy="produit")
+     * @ORM\OneToMany(targetEntity=LigneCommand::class, mappedBy="produit", cascade={"remove"})
      */
     private $cmd;
 
